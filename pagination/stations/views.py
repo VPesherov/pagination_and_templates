@@ -13,8 +13,6 @@ def bus_stations(request):
     # получите текущую страницу и передайте ее в контекст
     # также передайте в контекст список станций на странице
 
-
-
     with open(settings.BUS_STATION_CSV, newline='', encoding='UTF-8') as csvfile:
         reader = csv.DictReader(csvfile)
         BUS_STATIONS = []
